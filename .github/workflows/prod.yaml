@@ -32,6 +32,5 @@ jobs:
              pgrep -f react | xargs kill
              cd /tinyhousess
              npm install
-             npm run build
-             serve -s build
-              
+             npm start
+             

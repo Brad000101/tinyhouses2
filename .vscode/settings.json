@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/a882b7f1-9852-4900-bd1e-8ffaa2f73047/resourceGroups/CASUTE/providers/Microsoft.Web/sites/dccasutamea",
+    "appService.deploySubpath": "."
+}

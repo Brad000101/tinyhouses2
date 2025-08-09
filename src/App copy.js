@@ -22,8 +22,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     height: '100px', // Set a fixed height for the logo container
-  },
-  logo: {
+  },  logo: {
     maxHeight: '100%', // Make the logo responsive to the container height
     width: 'auto', // Maintain aspect ratio
   },
@@ -232,61 +231,71 @@ const styles = {
   },
 };
 
-// --- Mock Data for Container Home Models (Updated to 2 models) ---
+// --- Mock Data for 4 Container Home Models ---
 const containerHomeModels = [
   {
-    id: 'model-locuinta-premium',
-    name: 'Eleganța Rurală',
-    description: 'Experimentează viața modernă într-un spațiu optimizat și elegant. Ideală pentru locuințe permanente sau de vacanță, oferind confort și stil într-un design compact. Include finisaje de înaltă calitate și izolație superioară.',
-    size: 'Container de aprox. 30 mp',
-    price: 'Începând de la 48.000 €',
-    category: 'locuit',
-    images: [ process.env.PUBLIC_URL + '/images/cl1.jpg',
-      process.env.PUBLIC_URL + '/images/cl2.jpg',
-      process.env.PUBLIC_URL + '/images/cl3.jpg',
-      process.env.PUBLIC_URL + '/images/cl4.jpg',
-      process.env.PUBLIC_URL + '/images/cl5.jpg',
-      process.env.PUBLIC_URL + '/images/cl6.jpg',
-      process.env.PUBLIC_URL + '/images/cl7.jpg',
-      process.env.PUBLIC_URL + '/images/cl8.jpg',
-      process.env.PUBLIC_URL + '/images/cl9.jpg'
-    ],
-    thumbnail: process.env.PUBLIC_URL + '/images/cl9.jpg'
-    },
-  {
-    id: 'model-comercial-inovativ',
-    name: 'Soluția Afacerii Tale',
-    description: 'Un spațiu comercial modular, ideal pentru birouri, magazine pop-up, cafenele sau evenimente. Design adaptabil nevoilor tale, cu posibilități multiple de personalizare interioară și exterioară. O soluție rapidă și cost-eficientă pentru extinderea afacerii.',
-    size: 'Container de 30 mp (personalizabil)',
-    price: 'Cere Ofertă Personalizată',
-    category: 'comercial',
-    images: [ process.env.PUBLIC_URL + '/images/cc1.jpg',
-      process.env.PUBLIC_URL + '/images/cc2.jpg',
-      process.env.PUBLIC_URL + '/images/cc3.jpg',
-      process.env.PUBLIC_URL + '/images/cc4.jpg',
-      process.env.PUBLIC_URL + '/images/cc5.jpg',
-      process.env.PUBLIC_URL + '/images/cc6.jpg',
-      process.env.PUBLIC_URL + '/images/cc7.jpg',
-      process.env.PUBLIC_URL + '/images/cc8.jpg',
-      process.env.PUBLIC_URL + '/images/cc9.jpg',
-      process.env.PUBLIC_URL + '/images/cc10.jpg',
-      process.env.PUBLIC_URL + '/images/cc11.jpg'
-    ],
-    thumbnail: process.env.PUBLIC_URL + '/images/cc3.jpg'
-  },
+  id: 'model-solo',
+  name: 'The Solo',
+  description: 'Compact and efficient living. Ideal for singles or couples. Features a kitchenette, bathroom, and combined living/sleeping area.',
+  size: '20ft Container (approx. 15 sqm)',
+  price: 'Starting from $25,000', // Example price
+  images: [
+    'https://media.istockphoto.com/id/1419410282/photo/silent-forest-in-spring-with-beautiful-bright-sun-rays.jpg?s=612x612&w=0&k=20&c=UHeb1pGOw6ozr6utsenXHhV19vW6oiPIxDqhKCS2Llk=',
+    'https://practigal.co.nz/cdn/shop/products/33333.jpg?v=1671053105&width=1445'
+  ],
+  thumbnail: 'https://via.placeholder.com/300x200/3498db/FFFFFF?text=Solo+Thumb',
+},
+{
+  id: 'model-duo',
+  name: 'The Duo',
+  description: 'Spacious design using a 40ft container. Offers a separate bedroom, full bathroom, kitchen, and comfortable living space.',
+  size: '40ft Container (approx. 30 sqm)',
+  price: 'Starting from $45,000',
+  images: [
+    'https://via.placeholder.com/600x400/2ecc71/FFFFFF?text=Duo+Living',
+    'https://via.placeholder.com/600x400/2ecc71/EEEEEE?text=Duo+Bedroom',
+    'https://via.placeholder.com/600x400/2ecc71/DDDDDD?text=Duo+Kitchen',
+  ],
+  thumbnail: 'https://via.placeholder.com/300x200/2ecc71/FFFFFF?text=Duo+Thumb',
+},
+{
+  id: 'model-family',
+  name: 'The Family Hub',
+  description: 'Combining two containers for ample space. Features 2 bedrooms, a larger kitchen and living area, perfect for small families.',
+  size: '2 x 40ft Containers (approx. 60 sqm)',
+  price: 'Inquire for Price', // Price might be variable
+  images: [
+    'https://via.placeholder.com/600x400/e74c3c/FFFFFF?text=Family+Living',
+    'https://via.placeholder.com/600x400/e74c3c/EEEEEE?text=Family+Bedroom1',
+    'https://via.placeholder.com/600x400/e74c3c/DDDDDD?text=Family+Bedroom2',
+  ],
+  thumbnail: 'https://via.placeholder.com/300x200/e74c3c/FFFFFF?text=Family+Thumb',
+},
+{
+  id: 'model-office',
+  name: 'The Workspace',
+  description: 'A dedicated container office space. Insulated, wired, and ready for work. Can be customized with desks and shelving.',
+  size: '20ft Container (approx. 15 sqm)',
+  price: 'Starting from $20,000',
+  images: [
+    'https://via.placeholder.com/600x400/f1c40f/FFFFFF?text=Office+Interior',
+    'https://via.placeholder.com/600x400/f1c40f/EEEEEE?text=Office+Exterior',
+  ],
+  thumbnail: 'https://via.placeholder.com/300x200/f1c40f/FFFFFF?text=Office+Thumb',
+},
 ];
 
 
 // --- WhatsApp Configuration ---
 const WHATSAPP_NUMBER = '+40745813445'; // !! REPLACE WITH YOUR ACTUAL WHATSAPP NUMBER (including country code)
-const WHATSAPP_DEFAULT_MESSAGE = "Bună ziua! Sunt interesat să aflu mai multe despre casele container. Vă rog să mă contactați."; // Default message in Romanian
+const WHATSAPP_DEFAULT_MESSAGE = "Hi! I'm interested in learning more about your container homes."; // Default message
 
 // --- Helper Function to create WhatsApp Link ---
 const createWhatsAppLink = (message) => {
     // Basic validation for phone number format (can be improved)
     const phone = WHATSAPP_NUMBER.replace(/[^0-9+]/g, ''); // Keep only digits and +
     if (!phone) {
-        console.error("Număr WhatsApp invalid configurat.");
+        console.error("Invalid WhatsApp number configured.");
         return '#'; // Return a safe link if number is invalid
     }
     return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
@@ -338,7 +347,7 @@ const ModelCard = ({ model }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [showGallery, setShowGallery] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const inquiryMessage = `Bună ziua, sunt interesat de modelul "${model.name}". Puteți să-mi oferiți mai multe detalii?`; // Message in Romanian
+  const inquiryMessage = `Hi, I'm interested in the "${model.name}" model. Can you tell me more?`;
 
   const openGallery = () => {
     if (model.images && model.images.length > 0) {
@@ -371,9 +380,9 @@ const ModelCard = ({ model }) => {
 
   return (
     <div
-      style={{ ...styles.modelCard, ...(isHovered && !showGallery ? styles.modelCardHover : {}) }} // Apply hover only if gallery is NOT open
-      onMouseEnter={() => !showGallery && setIsHovered(true)} // Set hovered only if gallery is NOT open
-      onMouseLeave={() => !showGallery && setIsHovered(false)} // Set hovered only if gallery is NOT open
+      style={{ ...styles.modelCard, ...(isHovered ? styles.modelCardHover : {}) }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <img
         src={model.thumbnail || (model.images && model.images[0]) || 'https://via.placeholder.com/300x200/cccccc/FFFFFF?text=No+Image'}
@@ -385,12 +394,12 @@ const ModelCard = ({ model }) => {
       <div style={styles.modelContent}>
         <h3 style={styles.modelTitle}>{model.name}</h3>
         <p style={styles.modelDescription}>
-          <strong>Dimensiune:</strong> {model.size}<br />
+          <strong>Size:</strong> {model.size}<br />
           {model.description}
         </p>
         <p style={styles.modelPrice}>{model.price}</p>
         <WhatsAppButton message={inquiryMessage}>
-          Întreabă despre acest Model
+          Inquire about this Model
         </WhatsAppButton>
       </div>
 
@@ -417,7 +426,7 @@ const ModelCard = ({ model }) => {
 
           <img
             src={model.images[currentImageIndex]}
-            alt={`${model.name} - Imagine ${currentImageIndex + 1}`}
+            alt={`${model.name} - Image ${currentImageIndex + 1}`}
             style={styles.galleryImage}
             onClick={(e) => e.stopPropagation()} // Prevent closing overlay when clicking image
           />
@@ -445,25 +454,31 @@ const ModelCard = ({ model }) => {
 
 // --- Main App Component ---
 const App = () => {
+    // No filtering state needed anymore
+    // Basic loading/error state can be kept if data were fetched async
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
-    const displayedModels = containerHomeModels; // Always display all models
+    // Simulate loading if needed, otherwise just display
+    // useEffect(() => {
+    //   setLoading(true);
+    //   setTimeout(() => setLoading(false), 500); // Simulate short load
+    // }, []);
 
     return (
         <div style={styles.container}>
             {/* Header */}
             <header style={styles.header}>
-              <div style={styles.logoContainer}>
-                    <img
-                      src="https://lime-bertha-77.tiiny.site/png/rsz_1rsz_1rsz_new_logo" // <--- YOUR LOGO URL GOES HERE
-                      alt="Logo Companie"
-                      style={styles.logo}
-                    />
-                  </div>
+<div style={styles.logoContainer}>
+      <img
+        src="https://lime-bertha-77.tiiny.site/png/rsz_1rsz_1rsz_new_logo" // <--- YOUR LOGO URL GOES HERE
+        alt="Company Logo"
+        style={styles.logo}
+      />
+    </div>
                    <nav style={styles.nav}>
-                    <NavLink href="#home">Acasă</NavLink>
-                    <NavLink href="#models">Modele</NavLink>
+                    <NavLink href="#home">Home</NavLink>
+                    <NavLink href="#models">Models</NavLink>
                     <NavLink href="#contact">Contact</NavLink>
                 </nav>
             </header>
@@ -472,26 +487,25 @@ const App = () => {
             <main style={styles.main}>
                 {/* Hero Section */}
                 <section id="home" style={styles.heroSection}>
-                    <h2 style={styles.heroTitle}>Locuințe Moderne, Reimaginate.</h2>
+                    <h2 style={styles.heroTitle}>Modern Living, Reimagined.</h2>
                     <p style={styles.heroSubtitle}>
-                        Descoperă case mici, sustenabile și stilate, construite din containere de transport de înaltă calitate. Perfecte pentru locuit minimalist, birouri sau case de oaspeți.
+                        Discover sustainable and stylish small homes built from high-quality shipping containers. Perfect for minimalist living, offices, or guest houses.
                     </p>
                     <WhatsAppButton message={WHATSAPP_DEFAULT_MESSAGE}>
-                        Contactează-ne pe WhatsApp
+                        Contact Us on WhatsApp
                     </WhatsAppButton>
                 </section>
 
                 {/* Models Section */}
                 <section id="models" style={styles.modelsSection}>
-                    <h2 style={styles.sectionTitle}>Modelele Noastre de Case Container</h2>
-
+                    <h2 style={styles.sectionTitle}>Our Container Home Models</h2>
                     {loading ? (
-                        <div style={styles.loading}>Se încarcă modelele...</div>
+                        <div style={styles.loading}>Loading Models...</div>
                     ) : error ? (
-                        <div style={styles.error}>Eroare la încărcarea modelelor: {error}</div>
+                        <div style={styles.error}>{error}</div>
                     ) : (
                         <div style={styles.modelsGrid}>
-                            {displayedModels.map(model => (
+                            {containerHomeModels.map(model => (
                                 <ModelCard key={model.id} model={model} />
                             ))}
                         </div>
@@ -500,12 +514,12 @@ const App = () => {
 
                 {/* Contact Section */}
                  <section id="contact" style={styles.contactSection}>
-                    <h2 style={styles.sectionTitle}>Începe Azi!</h2>
+                    <h2 style={styles.sectionTitle}>Get Started Today</h2>
                     <p style={styles.contactText}>
-                        Ești gata să discuți proiectul tău de casă container? Ai întrebări despre personalizare sau livrare? Contactează-ne direct prin WhatsApp pentru cel mai rapid răspuns.
+                        Ready to discuss your container home project? Have questions about customization or delivery? Reach out to us directly via WhatsApp for the quickest response.
                     </p>
                      <WhatsAppButton message={WHATSAPP_DEFAULT_MESSAGE}>
-                        Discută cu Noi pe WhatsApp
+                        Chat with Us on WhatsApp
                     </WhatsAppButton>
                 </section>
 
@@ -513,10 +527,11 @@ const App = () => {
 
             {/* Footer */}
             <footer style={styles.footer}>
-                &copy; {new Date().getFullYear()} Case Container SRL. Toate drepturile rezervate.
+                &copy; {new Date().getFullYear()} Container Homes Inc. All rights reserved.
             </footer>
         </div>
     );
 };
 
 export default App;
+

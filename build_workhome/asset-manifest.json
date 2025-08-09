@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tinyhouses2/static/css/main.e6c13ad2.css",
+    "main.js": "/tinyhouses2/static/js/main.4fcf7b6d.js",
+    "static/js/453.44dbd550.chunk.js": "/tinyhouses2/static/js/453.44dbd550.chunk.js",
+    "index.html": "/tinyhouses2/index.html",
+    "main.e6c13ad2.css.map": "/tinyhouses2/static/css/main.e6c13ad2.css.map",
+    "main.4fcf7b6d.js.map": "/tinyhouses2/static/js/main.4fcf7b6d.js.map",
+    "453.44dbd550.chunk.js.map": "/tinyhouses2/static/js/453.44dbd550.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.4fcf7b6d.js"
+  ]
+}

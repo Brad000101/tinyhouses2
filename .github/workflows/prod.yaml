@@ -15,11 +15,11 @@ jobs:
           run: sudo apt-get install sshpass
 
         - name: Copy docker-compose.yml to droplet
-          run: sshpass -v -p ${{ secrets.DROPLET_PASSWORD }} scp -o StrictHostKeyChecking=no ./src root@${{ secrets.DROPLET_IP }}:/tinyhousess
+          run: sshpass -v -p ${{ secrets.DROPLET_PASSWORD }} scp -r -o StrictHostKeyChecking=no ./src root@${{ secrets.DROPLET_IP }}:/tinyhousess
         - name: Copy docker-compose.yml to droplet
-          run: sshpass -v -p ${{ secrets.DROPLET_PASSWORD }} scp -o StrictHostKeyChecking=no ./public root@${{ secrets.DROPLET_IP }}:/tinyhousess
+          run: sshpass -v -p ${{ secrets.DROPLET_PASSWORD }} scp -r -o StrictHostKeyChecking=no ./public root@${{ secrets.DROPLET_IP }}:/tinyhousess
         - name: Copy docker-compose.yml to droplet
-          run: sshpass -v -p ${{ secrets.DROPLET_PASSWORD }} scp -o StrictHostKeyChecking=no ./package.json root@${{ secrets.DROPLET_IP }}:/tinyhousess/package.json
+          run: sshpass -v -p ${{ secrets.DROPLET_PASSWORD }} scp -r -o StrictHostKeyChecking=no ./package.json root@${{ secrets.DROPLET_IP }}:/tinyhousess/package.json
 
         - name: Deploy
           uses: appleboy/ssh-action@master

@@ -21,7 +21,7 @@ jobs:
         - name: Copy docker-compose.yml to droplet
           run: sshpass -v -p ${{ secrets.DROPLET_PASSWORD }} scp -r -o StrictHostKeyChecking=no ./package.json root@${{ secrets.DROPLET_IP }}:/tinyhousess/package.json
         - name: Copy docker-compose.yml to droplet
-          run: sshpass -v -p ${{ secrets.DROPLET_PASSWORD }} scp -r -o StrictHostKeyChecking=no ./package-lock.json root@${{ secrets.DROPLET_IP }}:/tinyhousess/package.json
+          run: sshpass -v -p ${{ secrets.DROPLET_PASSWORD }} scp -r -o StrictHostKeyChecking=no ./package-lock.json root@${{ secrets.DROPLET_IP }}:/tinyhousess/package-lock.json
         - name: Deploy
           uses: appleboy/ssh-action@master
           with:

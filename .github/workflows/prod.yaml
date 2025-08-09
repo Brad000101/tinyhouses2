@@ -29,7 +29,8 @@ jobs:
             username: root
             password: ${{ secrets.DROPLET_PASSWORD }}
             script: |
-              cd /tinyhousess
-              npm install
-              npm start
+             pgrep -f react | xargs kill
+             cd /tinyhousess
+             npm install
+             npm start
               

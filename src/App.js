@@ -472,7 +472,7 @@ const App = () => {
             <main style={styles.main}>
                 {/* Hero Section */}
                 <section id="home" style={styles.heroSection}>
-                    <h2 style={styles.heroTitle}>Locuințe Moderne, Reimaginate.</h2>
+                    <h2 style={styles.heroTitle}>Locuințe dada, Reimaginate.</h2>
                     <p style={styles.heroSubtitle}>
                         Descoperă case mici, sustenabile și stilate, construite din containere de transport de înaltă calitate. Perfecte pentru locuit minimalist, birouri sau case de oaspeți.
                     </p>

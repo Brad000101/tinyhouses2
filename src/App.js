@@ -502,7 +502,7 @@ const App = () => {
                  <section id="contact" style={styles.contactSection}>
                     <h2 style={styles.sectionTitle}>Începe Azi!</h2>
                     <p style={styles.contactText}>
-                        Ești gata să discuți proiectul tău de casă container? Ai întrebări despre personalizare sau livrare? Contactează-ne direct prin WhatsApp pentru cel mai rapid răspuns.
+                        Ești !!gata să discuți proiectul tău de casă container? Ai întrebări despre personalizare sau livrare? Contactează-ne direct prin WhatsApp pentru cel mai rapid răspuns.
                     </p>
                      <WhatsAppButton message={WHATSAPP_DEFAULT_MESSAGE}>
                         Discută cu Noi pe WhatsApp

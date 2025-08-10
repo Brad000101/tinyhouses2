@@ -236,10 +236,45 @@ const styles = {
 const containerHomeModels = [
   {
     id: 'model-locuinta-premium',
-    name: 'Eleganța Rurală',
-    description: 'Experimentează viața modernă într-un spațiu optimizat și elegant. Ideală pentru locuințe permanente sau de vacanță, oferind confort și stil într-un design compact. Include finisaje de înaltă calitate și izolație superioară.',
-    size: 'Container de aprox. 30 mp',
-    price: 'Începând de la 48.000 €',
+    name: ' Configurație locativă',
+    description: `Experimentează viața modernă într-un spațiu optimizat și elegant. Ideală pentru locuințe permanente sau de vacanță, oferind confort și stil într-un design compact. Include finisaje de înaltă calitate și izolație superioară. Confort și stil în spații compacte Structura
+Baza structurii stă în combinația inteligentă dintr-un schelet  metalic solid și elemente din lemn, pentru o rezistență optimă și un aspect cald, primitor.
+Izolație
+Pentru un interior confortabil indiferent de sezon, folosim o varietate de materiale termoizolante: polistiren, spumă poliuretanică, vată minerală și vată bazaltică – astfel adaptăm casa la nevoile tale în funcție de climă și buget.
+
+Finisaje interior
+Spațiul interior e finisat cu grijă și atenție la detalii:
+
+rigips pentru suprafețe netede și moderne;
+
+lambriu din lemn pentru o notă rustică și caldă;
+
+lambriu sau panou PVC – opțiuni practice, ușor de întreținut;
+
+izolație la nivelul pardoselii, pentru confort termic;
+
+în final, alegi între parchet clasic sau linoleum, după stil și durabilitate dorită.
+
+Finisaje exterior
+Aspectul exterior este la fel de personalizabil:
+
+lambriu din lemn pentru eleganță naturală;
+
+lambriu PVC pentru o opțiune durabilă și fără întreținere;
+
+polistiren acoperit cu plasă și masă de șpaclu, pentru un finisaj uniform și izolator;
+
+sau efecțiune structurată, care adaugă textură și profunzime designului.
+
+Sisteme electrice
+Proiectat pentru confort și funcționalitate: iluminat interior și exterior, prize 220 V, toate configurate pentru utilitate maximă și siguranță.
+
+Instalație sanitară
+Echipat complet cu cabina de duș, chiuvetă și toaletă, pentru a asigura un spațiu complet și practic, gata de locuit.
+
+Această casuta modulara reprezintă o combinație ideală între rezistenta, izolație performantă, design interior personalizabil și finisaje exterioare estetice – totul integrat armonios pentru confort și funcționalitate.`
+    size: 'Casuta de cca. 15 mp','(personalizabil)'
+    price: 'Începând de la 12.500 €',
     category: 'locuit',
     images: [ process.env.PUBLIC_URL + '/images/cl1.jpg',
       process.env.PUBLIC_URL + '/images/cl2.jpg',
@@ -250,6 +285,7 @@ const containerHomeModels = [
       process.env.PUBLIC_URL + '/images/cl7.jpg',
       process.env.PUBLIC_URL + '/images/cl8.jpg',
       process.env.PUBLIC_URL + '/images/cl9.jpg'
+      process.env.PUBLIC_URL + '/images/c20.jpg'
     ],
     thumbnail: process.env.PUBLIC_URL + '/images/cl9.jpg'
     },
@@ -257,8 +293,8 @@ const containerHomeModels = [
     id: 'model-comercial-inovativ',
     name: 'Soluția Afacerii Tale',
     description: 'Un spațiu comercial modular, ideal pentru birouri, magazine pop-up, cafenele sau evenimente. Design adaptabil nevoilor tale, cu posibilități multiple de personalizare interioară și exterioară. O soluție rapidă și cost-eficientă pentru extinderea afacerii.',
-    size: 'Container de 30 mp (personalizabil)',
-    price: 'Cere Ofertă Personalizată',
+    size: 'Car vienez  de la 10 mp (personalizabil)',
+    price: 'Incepand de la 5.500 €',
     category: 'comercial',
     images: [ process.env.PUBLIC_URL + '/images/cc1.jpg',
       process.env.PUBLIC_URL + '/images/cc2.jpg',
@@ -271,6 +307,8 @@ const containerHomeModels = [
       process.env.PUBLIC_URL + '/images/cc9.jpg',
       process.env.PUBLIC_URL + '/images/cc10.jpg',
       process.env.PUBLIC_URL + '/images/cc11.jpg'
+      process.env.PUBLIC_URL + '/images/cc12.jpg'
+      process.env.PUBLIC_URL + '/images/cc13.jpg'
     ],
     thumbnail: process.env.PUBLIC_URL + '/images/cc3.jpg'
   },
@@ -472,9 +510,9 @@ const App = () => {
             <main style={styles.main}>
                 {/* Hero Section */}
                 <section id="home" style={styles.heroSection}>
-                    <h2 style={styles.heroTitle}>Locuințe dada, Reimaginate.</h2>
+                    <h2 style={styles.heroTitle}>Locuințe Modulare, Reimaginate.</h2>
                     <p style={styles.heroSubtitle}>
-                        Descoperă case mici, sustenabile și stilate, construite din containere de transport de înaltă calitate. Perfecte pentru locuit minimalist, birouri sau case de oaspeți.
+                        Descoperă case mici, sustenabile și stilate. Perfecte pentru locuit minimalist, birouri sau case de vacanta.
                     </p>
                     <WhatsAppButton message={WHATSAPP_DEFAULT_MESSAGE}>
                         Contactează-ne pe WhatsApp
@@ -483,7 +521,7 @@ const App = () => {
 
                 {/* Models Section */}
                 <section id="models" style={styles.modelsSection}>
-                    <h2 style={styles.sectionTitle}>Modelele Noastre de Case Container</h2>
+                    <h2 style={styles.sectionTitle}>modelele noastre de casute modulare</h2>
 
                     {loading ? (
                         <div style={styles.loading}>Se încarcă modelele...</div>
@@ -500,9 +538,9 @@ const App = () => {
 
                 {/* Contact Section */}
                  <section id="contact" style={styles.contactSection}>
-                    <h2 style={styles.sectionTitle}>Începe Azi!</h2>
+                    <h2 style={styles.sectionTitle}>Contacteaza-ne pentru oferte personalizate!</h2>
                     <p style={styles.contactText}>
-                        Ești !!gata să discuți proiectul tău de casă container? Ai întrebări despre personalizare sau livrare? Contactează-ne direct prin WhatsApp pentru cel mai rapid răspuns.
+                        Ești pregătit să transformi visul în realitate? Spune-ne ce personalizări ai în minte și discutăm împreună cum o livrăm rapid la tine. Pentru răspunsuri imediate, scrie-ne pe WhatsApp — suntem aici pentru tine!
                     </p>
                      <WhatsAppButton message={WHATSAPP_DEFAULT_MESSAGE}>
                         Discută cu Noi pe WhatsApp

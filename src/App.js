@@ -274,7 +274,6 @@ Echipat complet cu cabina de duș, chiuvetă și toaletă, pentru a asigura un s
 
 Această casuta modulara reprezintă o combinație ideală între rezistenta, izolație performantă, design interior personalizabil și finisaje exterioare estetice – totul integrat armonios pentru confort și funcționalitate.`,
     size: 'Casuta de cca. 15 mp,\'(personalizabil)\'',
-    
     price: 'Începând de la 12.500 €',
     category: 'locuit',
     images: [ process.env.PUBLIC_URL + '/images/cl1.jpg',
@@ -293,7 +292,7 @@ Această casuta modulara reprezintă o combinație ideală între rezistenta, iz
   {
     id: 'model-comercial-inovativ',
     name: 'Soluția Afacerii Tale',
-    description: 'Un spațiu comercial modular, ideal pentru birouri, magazine pop-up, cafenele sau evenimente. Design adaptabil nevoilor tale, cu posibilități multiple de personalizare interioară și exterioară. O soluție rapidă și cost-eficientă pentru extinderea afacerii.Experimentează viața modernă într-un spațiu optimizat și elegant. Ideală pentru locuințe permanente sau de vacanță, oferind confort și stil într-un design compact. Include finisaje de înaltă calitate și izolație superioară. Confort și stil în spații compacte Structuraa
+    description: `Un spațiu comercial modular, ideal pentru birouri, magazine pop-up, cafenele sau evenimente. Design adaptabil nevoilor tale, cu posibilități multiple de personalizare interioară și exterioară. O soluție rapidă și cost-eficientă pentru extinderea afacerii.Experimentează viața modernă într-un spațiu optimizat și elegant. Ideală pentru locuințe permanente sau de vacanță, oferind confort și stil într-un design compact. Include finisaje de înaltă calitate și izolație superioară. Confort și stil în spații compacte Structuraa
 Baza structurii stă în combinația inteligentă dintr-un schelet  metalic solid și elemente din lemn, pentru o rezistență optimă și un aspect cald, primitor.
 Izolație
 Pentru un interior confortabil indiferent de sezon, folosim o varietate de materiale termoizolante: polistiren, spumă poliuretanică, vată minerală și vată bazaltică – astfel adaptăm casa la nevoile tale în funcție de climă și buget.

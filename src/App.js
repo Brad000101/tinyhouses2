@@ -272,8 +272,8 @@ Proiectat pentru confort și funcționalitate: iluminat interior și exterior, p
 Instalație sanitară
 Echipat complet cu cabina de duș, chiuvetă și toaletă, pentru a asigura un spațiu complet și practic, gata de locuit.
 
-Această casuta modulara reprezintă o combinație ideală între rezistenta, izolație performantă, design interior personalizabil și finisaje exterioare estetice – totul integrat armonios pentru confort și funcționalitate.`
-    size: 'Casuta de cca. 15 mp','(personalizabil)'
+Această casuta modulara reprezintă o combinație ideală între rezistenta, izolație performantă, design interior personalizabil și finisaje exterioare estetice – totul integrat armonios pentru confort și funcționalitate.`,
+    size: 'Casuta de cca. 15 mp,\'(personalizabil)\'',
     price: 'Începând de la 12.500 €',
     category: 'locuit',
     images: [ process.env.PUBLIC_URL + '/images/cl1.jpg',
@@ -284,7 +284,7 @@ Această casuta modulara reprezintă o combinație ideală între rezistenta, iz
       process.env.PUBLIC_URL + '/images/cl6.jpg',
       process.env.PUBLIC_URL + '/images/cl7.jpg',
       process.env.PUBLIC_URL + '/images/cl8.jpg',
-      process.env.PUBLIC_URL + '/images/cl9.jpg'
+      process.env.PUBLIC_URL + '/images/cl9.jpg',
       process.env.PUBLIC_URL + '/images/c20.jpg'
     ],
     thumbnail: process.env.PUBLIC_URL + '/images/cl9.jpg'
@@ -306,8 +306,8 @@ Această casuta modulara reprezintă o combinație ideală între rezistenta, iz
       process.env.PUBLIC_URL + '/images/cc8.jpg',
       process.env.PUBLIC_URL + '/images/cc9.jpg',
       process.env.PUBLIC_URL + '/images/cc10.jpg',
-      process.env.PUBLIC_URL + '/images/cc11.jpg'
-      process.env.PUBLIC_URL + '/images/cc12.jpg'
+      process.env.PUBLIC_URL + '/images/cc11.jpg',
+      process.env.PUBLIC_URL + '/images/cc12.jpg',
       process.env.PUBLIC_URL + '/images/cc13.jpg'
     ],
     thumbnail: process.env.PUBLIC_URL + '/images/cc3.jpg'

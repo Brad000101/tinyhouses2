@@ -30,9 +30,20 @@ jobs:
             username: root
             password: ${{ secrets.DROPLET_PASSWORD }}
             script: |
-             pkill -f react &>/dev/null || true
-             cd /tinyhousess
-             npm install
-             nohup npm run start &
-             disown
+              pkill -f react &>/dev/null || true
+              cd /tinyhousess
+              npm install
+              nohup npm run start &
+
+              # Wait a moment for the process to start
+              sleep 5
+
+              # Check if the process is running
+              if pgrep -f "npm run start" > /dev/null; then
+                echo "Successfully started the application."
+              else
+                echo "Error: The application failed to start."
+                exit 1
+              fi
+
              

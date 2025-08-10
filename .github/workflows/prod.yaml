@@ -33,5 +33,6 @@ jobs:
              pkill -f react &>/dev/null || true
              cd /tinyhousess
              npm install
-             npm start
+             nohup npm run start &
+             disown
              

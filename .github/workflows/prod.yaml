@@ -6,7 +6,7 @@ on:
 jobs:
     deploy:
       runs-on: ubuntu-latest
-      command_timeout: 20m
+
       steps:
         - name: Checkout code
           uses: actions/checkout@v2
@@ -26,6 +26,7 @@ jobs:
           uses: appleboy/ssh-action@master
           with:
             host: ${{ secrets.DROPLET_IP }}
+            command_timeout: 20m
             username: root
             password: ${{ secrets.DROPLET_PASSWORD }}
             script: |

@@ -33,7 +33,7 @@ jobs:
               set -e  # Exit immediately if a command exits with a non-zero status
 
               echo "Stopping existing process..."
-              pkill -f react &>/dev/null || true
+              sudo pkill -f react &>/dev/null || true
 
               echo "Navigating to project directory..."
               cd /tinyhousess
